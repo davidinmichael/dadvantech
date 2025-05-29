@@ -1,7 +1,36 @@
-{% extends "base.html" %}
-{% load static %}
-{% block content %}
-  <div class="container">
-	<h1>Hello World!</h1>
+{% extends "base.html" %} {% load static %} {% block content %}
+<div
+  class="container-fluid hero"
+  style="background-image: url('static/images/hero-01.jpg')"
+>
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>We Distribute Digital Solutions & Tools to Power Your Growth</h1>
+    <p>
+      From building websites and mobile apps to connecting you with trusted tech
+      products — d’AdvanTech Global Solutions equips individuals and businesses
+      to thrive in the digital age
+    </p>
+    <a href="#" class="btn btn-primary">Contact Us</a>
   </div>
+</div>
+<div class="what-we-do">
+  <div>
+    <h2>What We Do</h2>
+    <p>
+      We’re a tech-driven company offering professional digital services like
+      website and mobile app development, training, and strategic support. We
+      also recommend the best tools and tech products to boost your business or
+      personal productivity — all in one place.
+    </p>
+  </div>
+</div>
+
+<div class="stats">
+  <p class="stat-item">100+ Websites Built</p>
+  <p class="stat-item">20+ Apps Developed</p>
+  <p class="stat-item">50+ People Trained</p>
+  <p class="stat-item">70+ Products Sold</p>
+  <p class="stat-item">500+ Community Members</p>
+</div>
 {% endblock content %}
