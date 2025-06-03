@@ -12,3 +12,6 @@ def index(request):
 def products_in_drive(request):
     url = os.getenv("PRODUCTS_IN_DRIVE_LINK")
     return redirect(url)
+
+def product_details(request):
+    return render(request, "core/product-details.html")
