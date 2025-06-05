@@ -1,0 +1,34 @@
+{% extends "base.html" %} {% load static %} {% block content %}
+
+<div class="products container-fluid solars">
+  <div class="title">
+    <h1>Solar Generator</h1>
+    <p>
+      Enjoy uninterrupted power with our Plug-and-Play Solar Generator System.
+      Charges with NEPA, generator, or solar panels — no heavy installation
+      needed. Portable. Reliable. Always ready.
+    </p>
+  </div>
+  <div class="product-items">
+	{% for product in products %}
+	  <div class="product-card">
+		<div class="product-img">
+		  <img src="{% static product.image %}" alt="{{ product.product }}" />
+		</div>
+		<div class="product-body">
+		  <h3>{{ product.product }}</h3>
+		  <p>{{ product.description }}</p>
+		  <p class="price"><i class="fa-solid fa-naira-sign"></i>{{ product.price_preview }}</p>
+		  <a href="{% url 'solar_generator_details' product.id %}" class="btn btn-primary">Details</a>
+		</div>
+	  </div>
+	{% endfor %}
+  </div>
+  <a
+    href="{% url 'products_in_drive' %}"
+    target="_blank"
+    class="btn btn-secondary"
+    >Explore More</a
+  >
+</div>
+{% endblock content %}

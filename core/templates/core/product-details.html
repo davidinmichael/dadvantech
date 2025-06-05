@@ -1,11 +1,59 @@
-{% extends "base.html" %}
-{% load static %}
-{% block content %}
-  <div class="page-header container-fluid">
-	<h1>Product Details</h1>
-	<p>See more details about this product</p>
+{% extends "base.html" %} {% load static %} {% block content %}
+<div class="page-header container-fluid">
+  <h1>Product Details</h1>
+  <p>See more details about this product</p>
+</div>
+<div class="product-details container">
+  <div class="product-summary">
+    <div class="product-title">
+      <h3>{{ product.product }}</h3>
+      <p>{{ product.description }}</p>
+    </div>
+    <div class="product-img">
+      <img src="{% static product.image %}" alt="{{ product.product }}" />
+    </div>
   </div>
-  <div class="product-details container">
-	<h2>Product Details</h2>
+
+  <div class="product-contents">
+    <h4>Package Includes</h4>
+    <div class="product-content">
+      {% for item in product.package_includes %}
+      <p>{{ item }}</p>
+      {% endfor %}
+    </div>
   </div>
-{% endblock content %}
+  <div class="product-contents">
+    <h4>Supported Appliances (Estimated Load Capacity)</h4>
+    <div class="product-content">
+      {% for item in product.supported_appliances %}
+      <p>{{ item }}</p>
+      {% endfor %}
+    </div>
+  </div>
+  {% if product.warranty %}
+  <div class="product-contents">
+    <h4>Warranty</h4>
+    <div class="product-content">
+      {% for key, value in product.warranty.items %}
+      <p><span>{{ key }}:</span> {{ value }}</p>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="product-contents">
+    <h4>Pricing Options</h4>
+    <div class="product-content">
+      {% for item in product.pricing_options %}
+      <p>{{ item }}</p>
+      {% endfor %}
+    </div>
+  </div>
+  <a
+    href="https://wa.me/2348140980792?text=Hi%2C%20I%20want%20to%20order%20the%20{{product.product}}.%20My%20location%20is"
+    class="btn btn-primary"
+    target="_blank"
+    >Order Now</a
+  >
+</div>
+{% include "partials/community.html" %} {% endblock content %}

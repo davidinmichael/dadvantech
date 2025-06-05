@@ -1,17 +1,32 @@
 {% load static %}
 <nav>
-	<div class="nav-items">
-		<div class="logo">
-			<a href="#"><img src="{% static 'images/dadvantech-logo.png' %}" alt="Logo"></a>
-		</div>
-		<div class="nav-links" id="navLinks">
-			<a href="{% url 'index' %}" class="nav-link">Home</a>
-			<a href="#services" class="nav-link">Services</a>
-			<a href="#products" class="nav-link">Products</a>
-			<a href="#" class="nav-link">About</a>
-			<a href="#" class="nav-link">Contact</a>
-			<a href="#community" class="nav-link">Community</a>
-		</div>
-		<button class="menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
-	</div>
+  <div class="nav-items">
+    <div class="logo">
+      <a href="{% url 'index' %}"
+        ><img src="{% static 'images/dadvantech-logo.png' %}" alt="Logo"
+      /></a>
+    </div>
+
+    <div class="nav-links" id="navLinks">
+      <a href="{% url 'index' %}" class="nav-link">Home</a>
+      <a href="#services" class="nav-link">Services</a>
+
+      <div class="nav-link dropdown">
+        <a href="#products" class="nav-link"
+          >Products <i class="fa fa-caret-down"></i
+        ></a>
+        <div class="dropdown-content">
+          <a href="{% url 'solar_generator' %}">Solar Generators</a>
+        </div>
+      </div>
+
+      <a href="#" class="nav-link">About</a>
+      <a href="#" class="nav-link">Contact</a>
+      <a href="#community" class="nav-link">Community</a>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
 </nav>

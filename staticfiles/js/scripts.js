@@ -23,4 +23,12 @@ window.addEventListener("DOMContentLoaded", () => {
 	}
 	});
 
+	const dropdown = document.querySelector(".dropdown > a");
+    const dropdownContent = document.querySelector(".dropdown-content");
+
+    dropdown.addEventListener("click", function (e) {
+      e.preventDefault(); // prevent the anchor from jumping
+      dropdownContent.classList.toggle("show");
+    });
+
 });
