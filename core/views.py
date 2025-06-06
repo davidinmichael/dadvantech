@@ -32,3 +32,7 @@ def solar_product(request, pk):
         "product": product
     }
     return render(request, "core/product-details.html", context)
+
+class JoinCommunityView(View):
+    def get(self, request):
+        return render(request, "core/join_community.html")
