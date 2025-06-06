@@ -36,3 +36,6 @@ def solar_product(request, pk):
 class JoinCommunityView(View):
     def get(self, request):
         return render(request, "core/join_community.html")
+    
+    def post(self, request):
+        return redirect("")
