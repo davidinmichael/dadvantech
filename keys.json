@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "dadvantech-community",
+  "private_key_id": "aeac5e1231d2ce02073cd1b19a61a9f9e12e8b08",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCWOuY3kb+0/5IJ\noR2hVo6THBshD/HI+R/8caB7Xb9DwTch4jbPK13hwkvXCBksKK2u1aXjezuLg/7T\nEIRGHA9f480aAdv3uzn9p5peoj70sFjmJ6PdTtcCKaBtdV3lyb6YyLQSwuLqI/VQ\n7v8X0IPK1jWNaJxS2eedXgSlD8qhLQobFm1eI6N7mxMAcFocljRRB0H5VgtwSJDp\nhUhu+81ZxwLC8bXtbpsSqCeeUYxMZvthVR5f1k7fMS5MF6f9thbDpqTbXSLxvAPF\nMGz4qBQ3JtPEOuhIhG7nJxwY+NS769+BH4fMaFCHer7DaG4/U0T78QLYCZkXMXE0\nDrfHEI/5AgMBAAECggEAAIiVhDmBiYpF0cBve0D0MSwOoZuto2XVGf+qTv3afcpc\nIIPt52bzRqe6vrkB4+ECGuaZ1/i6UajGmSfMHHahjFjiA9dhWVwiHNdBSlg/qn1M\n14ZpA9Jxm4mbzv+1dWk1wtOlphJonWXCy4aJw+Mi8K+5kXa/ZWDuPGYW1KI9eTyP\nEZbNdrCWLNoNyN5w3VcKwTmFNCysj7z6ZoLOB1vWXJt5vggz0KsUGrl0raTE53uU\nXnA2DH/o1rZkWgwTZtFvS0RdGZc7mSCjnJZRyxEU8n5c8Mpl+4wiVKzbvnKgzrvC\nHVA+30bn3TPZl4NXmRPXFIaksKj6q0Wd9dQm43bcAQKBgQDKqcHoKTxl6V0D5UNL\nIfCCBmrPfl7sTLqNflB91icToORfDVlsbneux5kGRjPIJP0avEQHFFqXtSmpbAvh\nt0eAvPgEnuQ3gbj7g2f5BTjDyQdWTGErCo4J++IIo8UwMZjseuro4HJ7romyIKpE\noY1bG7YqlVcZKxD7D7fOFKhGAQKBgQC9xIN7l0nUUwWKGqcqKt7JXu53w/ev3wr5\nQbwI1gW0AjUFl2icIVDQdnBNgWuH7sl01eyIoH7q//rMtcejMf0sfUwOjPLMy1Ei\n9JddQNb2tLmMJc+KKBx5egw+14IBFWNXCRvxqe+ge8Pnqj1aX/jimVDhRqK9PXqs\nGKrQ0k55+QKBgDp3jQyIUPdpwr7r9mUHjpZEea4Q3Bu56xwE8/3JuY5NHXVaqZDB\nsd+Hj9sih6/XE/oRlGKieZxI1JMfK7JbqNI4MilLGbX1w8Mz3twVqJG7PlWkRWgg\nbGfu9f/eF3ZW6LJYp8q1bfHGocz05YpVPS2qqfxRB0aoiQaVO0bF6OIBAoGBAId5\nurBKAnAtUQAWJQ8qieBTAIXKBpKs9gWakyXvvSSUisvSGuGTu0EHvQboBR+HLpVV\nf8bOZa1ZT/BDOiHctzTCwsCEiXYBFIyS91igyJZZ0TknaTHljuZ+Zi2a5vnlDgV9\nwFBXlHYKxYIm/CP/7gu/jok1R0s4j9I6zf/ElDfpAoGAdngKHNHWE380lsGIFzUq\nKAx5JoHhX5Y7xiSFc6ojspScIal5kEUb2VaVOFlghfbFtaLp6vrjK9ajsAdVtono\nzisn9EiDFRNIAx3b+ephQYjaFYsnEwxAjtlttmbxObxE6zYpbN8QqNZgFjHuGEU1\nu6fYcs3JrOcD7kR+C7Gp5LE=\n-----END PRIVATE KEY-----\n",
+  "client_email": "dadvantech-community@dadvantech-community.iam.gserviceaccount.com",
+  "client_id": "115757528242972952002",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dadvantech-community%40dadvantech-community.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
