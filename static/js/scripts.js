@@ -29,6 +29,19 @@ window.addEventListener("DOMContentLoaded", () => {
     dropdown.addEventListener("click", function (e) {
       e.preventDefault(); // prevent the anchor from jumping
       dropdownContent.classList.toggle("show");
-    });
+	});
+	
+	const maxSelections = 2;
+	const checkboxes = document.querySelectorAll('#specializeGroupCheckboxes input[type="checkbox"]');
+  
+	checkboxes.forEach(cb => {
+	  cb.addEventListener('change', () => {
+		const checked = document.querySelectorAll('#specializeGroupCheckboxes input[type="checkbox"]:checked');
+		if (checked.length > maxSelections) {
+		  cb.checked = false;
+		  alert(`You can only select up to ${maxSelections} groups.`);
+		}
+	  });
+	});
 
 });

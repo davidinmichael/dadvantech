@@ -10,9 +10,13 @@ D-AdvanTech {% endblock title %} {% block content %}
 </div>
 <div class="join-community container">
   <div class="group-img">
-    <img src="{% static 'images/group-img.jpg' %}" alt="WhatsApp Community Groups">
+    <img
+      src="{% static 'images/group-img.jpg' %}"
+      alt="WhatsApp Community Groups"
+    />
   </div>
-  <form action="#" class="community-form">
+  <form action="{% url 'join_community' %}" class="community-form" method="post">
+    {% csrf_token %}
     <div class="form-groups">
       <!-- Email -->
       <div class="form-group">
@@ -45,22 +49,59 @@ D-AdvanTech {% endblock title %} {% block content %}
         <input type="text" name="last_name" id="lastName" placeholder="Doe" />
       </div>
 
-      <!-- Specialize Group -->
+      <!-- Specialize Group (Checkboxes - Max 2 Selection) -->
       <div class="form-group">
-        <label for="specializeGroup"
+        <label
           >What Specialize Group Do You Want to Join?
           <span class="required">*</span></label
         >
-        <select name="specialize_group" id="specializeGroup">
-          <option value="">-- Select Group --</option>
-          <option value="Not Sure">Not Sure</option>
-          <option value="Project Management">Project Management</option>
-          <option value="UI/UX/Product Design">UI/UX/Product Design</option>
-          <option value="Frontend">Frontend</option>
-          <option value="Backend">Backend</option>
-          <option value="Mobile App Development">Mobile App Development</option>
-          <option value="Mobile App Development">Social Media MGT</option>
-        </select>
+        <p class="form-group-description">You can select up to 2 groups</p>
+        <div class="checkbox-group" id="specializeGroupCheckboxes">
+          <label
+            ><input type="checkbox" name="specialize_group" value="Not Sure" />
+            Not Sure</label
+          ><br />
+          <label
+            ><input
+              type="checkbox"
+              name="specialize_group"
+              value="Project Management"
+            />
+            Project Management</label
+          ><br />
+          <label
+            ><input
+              type="checkbox"
+              name="specialize_group"
+              value="UI/UX/Product Design"
+            />
+            UI/UX/Product Design</label
+          ><br />
+          <label
+            ><input type="checkbox" name="specialize_group" value="Frontend" />
+            Frontend</label
+          ><br />
+          <label
+            ><input type="checkbox" name="specialize_group" value="Backend" />
+            Backend</label
+          ><br />
+          <label
+            ><input
+              type="checkbox"
+              name="specialize_group"
+              value="Mobile App Development"
+            />
+            Mobile App Development</label
+          ><br />
+          <label
+            ><input
+              type="checkbox"
+              name="specialize_group"
+              value="Social Media MGT"
+            />
+            Social Media MGT</label
+          >
+        </div>
       </div>
 
       <!-- WhatsApp Number -->
@@ -122,7 +163,7 @@ D-AdvanTech {% endblock title %} {% block content %}
         community engagement purposes.
       </p>
     </div>
-    <input type="submit" value="Submit" class="btn btn-primary">
+    <input type="submit" value="Submit" class="btn btn-primary" />
   </form>
 </div>
 {% endblock content %}

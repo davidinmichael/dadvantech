@@ -273,6 +273,7 @@ nav {
   padding: 10px 2rem;
   border-radius: 10px;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .btn-primary {
