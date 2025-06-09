@@ -488,8 +488,6 @@ footer {
 }
 
 .footer-items {
-  /* display: flex; */
-  /* flex-direction: column; */
   display: grid;
   gap: 2rem;
 }
@@ -719,4 +717,16 @@ footer {
   padding: 0 5% 0 0;
   }
 
+}
+
+.page-header .btn-primary {
+  background-color: var(--primary-color);
+  border: 2px solid var(--white-color);
+  margin-top: 10px;
+  transition: all .3s;
+}
+
+.page-header .btn-primary:hover {
+  background-color: var(--white-color);
+  color: var(--primary-color);
 }

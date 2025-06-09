@@ -117,4 +117,7 @@ class JoinCommunityView(View):
         
 
         return redirect(GENERAL_GROUP_LINK)
+    
+def digital_literacy(request):
+    return render(request, "core/digital_literacy.html")
 
