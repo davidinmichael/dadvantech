@@ -1,6 +1,7 @@
 from pathlib import Path
 import os
 from dotenv import load_dotenv
+from email.utils import formataddr
 
 load_dotenv()
 
@@ -112,3 +113,19 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 USE_THOUSAND_SEPARATOR = True
+
+EMAIL_BACKEND = os.getenv("EMAIL_BACKEND")
+DEFAULT_FROM_EMAIL = os.getenv("DEFAULT_FROM_EMAIL")
+
+ANYMAIL = {
+    "BREVO_API_KEY": os.getenv("EMAIL_API_KEY"),
+}
+
+GROUP_LINKS = {
+    "UI/UX/Product Design": "https://chat.whatsapp.com/GWcrvA61cYPLkdIJFwNJPV",
+    "Frontend": "https://chat.whatsapp.com/DgHLnoM7diXGTJzMCEcbpD",
+    "Backend": "https://chat.whatsapp.com/FgkR4VYN1aZ6pk0zrY2fid",
+    "Mobile App Development": "https://chat.whatsapp.com/F0DHnRqbGkP8eqUYztA83v",
+    "Social Media MGT": "https://chat.whatsapp.com/BEcgukf1l8p5P5IONY8gS6",
+    "Project Management": "https://chat.whatsapp.com/CnkgPPTlBcvJKqyf5J00mI",
+}

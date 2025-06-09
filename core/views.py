@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect
 from django.views import View
+from django.template.loader import render_to_string
 
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
@@ -10,7 +11,8 @@ from django.utils import timezone
 from dotenv import load_dotenv
 
 from core.products.solar_generators import products
-from dadvantech.settings.base import BASE_DIR
+from core.utils import send_email
+from dadvantech.settings.base import BASE_DIR, GROUP_LINKS
 
 load_dotenv()
 
@@ -47,8 +49,7 @@ class JoinCommunityView(View):
         email = request.POST.get('email', "")
         first_name = request.POST.get('first_name', "")
         last_name = request.POST.get('last_name', "")
-        specialize_groups = ', '.join(request.POST.getlist(
-            'specialize_group', []))  # Join checkboxes
+        specialize_groups = request.POST.getlist('specialize_group', [])
         whatsapp = request.POST.get('whatsapp', "")
         volunteer = request.POST.get('volunteer_interest', "")
         preferred_role = request.POST.get('preferred_role', "")
@@ -69,12 +70,14 @@ class JoinCommunityView(View):
         sheet = service.spreadsheets()
 
         # Prepare row data to append
+        specialized_groups = ', '.join(request.POST.getlist(
+            'specialize_group', []))
         row = [
             timestamp,
             email.lower(),
             first_name.capitalize(),
             last_name.capitalize(),
-            specialize_groups,
+            specialized_groups,
             whatsapp,
             volunteer,
             preferred_role,
@@ -94,7 +97,24 @@ class JoinCommunityView(View):
         except Exception as e:
             print(f"Failed to append to sheet: {e}")
         
+        group_data = []
+
+        for group in specialize_groups:
+            if group in GROUP_LINKS:
+                group_data.append({
+                    "name": group,
+                    "link": GROUP_LINKS[group]
+                })
+
         GENERAL_GROUP_LINK = os.getenv("GENERAL_GROUP_LINK")
+        context = {
+            'first_name': first_name.capitalize(),
+            "groups": group_data,
+            "geeks_galore_link": GENERAL_GROUP_LINK,
+        }
+        template = render_to_string("core/community_welcome.html", context)
+        send_email(email, "d'AdvanTech Community", template)
+        
 
         return redirect(GENERAL_GROUP_LINK)
 
