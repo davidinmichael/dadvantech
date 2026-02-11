@@ -117,11 +117,11 @@ class JoinCommunityView(View):
         
 
         return redirect(GENERAL_GROUP_LINK)
-    
+
 def digital_literacy(request):
+    """View to return digital literacy course details"""
     return render(request, "core/digital_literacy.html")
-    
+
 def digital_products(request):
     """View to return tech solutions"""
     return render(request, "core/digital-products.html")
-
