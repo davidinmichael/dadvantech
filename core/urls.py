@@ -11,4 +11,5 @@ urlpatterns = [
 	     name="solar_generator_details"),
     path("join-community/", JoinCommunityView.as_view(), name="join_community"),
 	path('digital-literacy/', views.digital_literacy, name="digital_literacy"),
+	path('digital-products/', views.digital_products, name="digital_products"),
 ]

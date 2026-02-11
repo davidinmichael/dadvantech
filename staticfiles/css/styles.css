@@ -481,6 +481,10 @@ nav {
   .page-header {
     margin-top: 8vh;
   }
+
+  .page-header p {
+    width: 80ch;
+  }
 }
 
 footer {

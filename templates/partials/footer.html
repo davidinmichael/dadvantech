@@ -1,5 +1,5 @@
 {% load static %}
-<footer class="container">
+<footer class="container" id="footer">
 	<div class="footer-items">
 		<div class="footer-item footer-title">
 			<div class="footer-header">
@@ -32,9 +32,9 @@
 			<h3 class="footer-header">Quick Links</h3>
 			<div class="quick-link-items">
 				<a href="#">Blog</a>
-				<a href="#">Solar Generator</a>
-				<a href="#">Computers</a>
-				<a href="#">Community</a>
+				<a href="#products">Digital Products</a>
+				<a href="{% url 'digital_literacy' %}">Courses</a>
+				<a href="#community">Community</a>
 			</div>
 		  </div>
 	</div>

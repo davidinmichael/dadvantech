@@ -1,7 +1,7 @@
 {% extends "base.html" %} {% load static %} {% block content %}
 <div
   class="container-fluid hero"
-  style="background-image: url('static/images/hero-01.jpg')"
+  style="background-image: url(&quot;static/images/hero-01.jpg&quot;)"
 >
   <div class="overlay"></div>
   <div class="hero-content">
@@ -52,7 +52,9 @@
         user experiences across all devices, tailored to reflect your brand's
         identity and meet your specific business needs.
       </p>
-      <a href="https://wa.link/ve4c4i" target="_blank" class="btn btn-primary">Get Started</a>
+      <a href="https://wa.link/ve4c4i" target="_blank" class="btn btn-primary"
+        >Get Started</a
+      >
     </div>
     <div class="service-card">
       <h3>Software Development</h3>
@@ -61,7 +63,9 @@
         productivity, and drive business growth, ensuring your organization
         stays ahead of the competition.
       </p>
-      <a href="https://wa.link/ve4c4i" target="_blank" class="btn btn-primary">Get Started</a>
+      <a href="https://wa.link/ve4c4i" target="_blank" class="btn btn-primary"
+        >Get Started</a
+      >
     </div>
     <div class="service-card">
       <h3>Mobile App Development</h3>
@@ -70,7 +74,9 @@
         iOS platforms, focusing on functionality, performance, and user
         engagement to help you connect with your audience effectively.
       </p>
-      <a href="https://wa.link/ve4c4i" target="_blank" class="btn btn-primary">Get Started</a>
+      <a href="https://wa.link/ve4c4i" target="_blank" class="btn btn-primary"
+        >Get Started</a
+      >
     </div>
     <div class="service-card">
       <h3>Tech Live Courses</h3>
@@ -79,7 +85,9 @@
         individuals and teams with the skills they need to excel in a rapidly
         changing digital landscape.
       </p>
-      <a href="https://wa.link/ve4c4i" target="_blank" class="btn btn-primary">Get Started</a>
+      <a href="https://wa.link/ve4c4i" target="_blank" class="btn btn-primary"
+        >Get Started</a
+      >
     </div>
     <div class="service-card">
       <h3>UI/UX Design</h3>
@@ -88,7 +96,9 @@
         pleasing interfaces, enhancing user satisfaction and engagement with
         your digital products.
       </p>
-      <a href="https://wa.link/ve4c4i" target="_blank" class="btn btn-primary">Get Started</a>
+      <a href="https://wa.link/ve4c4i" target="_blank" class="btn btn-primary"
+        >Get Started</a
+      >
     </div>
     <div class="service-card">
       <h3>Graphics Design</h3>
@@ -97,108 +107,15 @@
         communicate your brand message across all platforms, making a lasting
         impression on your audience.
       </p>
-      <a href="https://wa.link/ve4c4i" target="_blank" class="btn btn-primary">Get Started</a>
+      <a href="https://wa.link/ve4c4i" target="_blank" class="btn btn-primary"
+        >Get Started</a
+      >
     </div>
   </div>
-  <a href="https://wa.link/ve4c4i" target="_blank" class="btn btn-secondary">See More</a>
-</div>
-
-<div class="products container-fluid" id="products">
-  <div class="title">
-    <h2>Our Products</h2>
-    <p>
-      We also recommend the best tools and tech products to boost your business
-      or personal productivity
-    </p>
-  </div>
-  <div class="product-items">
-    <div class="product-card">
-      <div class="product-img">
-        <img
-          src="{% static 'images/product-001.webp' %}"
-          alt="1kVA Solar Generator"
-        />
-      </div>
-      <div class="product-body">
-        <h3>1kVA Solar Generator</h3>
-        <p>1kVA Solar Generator + 980W Battery + 180W Solar Panel.</p>
-        <p class="price"><i class="fa-solid fa-naira-sign"></i>260,000</p>
-        <a
-          href="https://wa.me/2348140980792?text=Hi%2C%20I%20want%20to%20order%20the%201kVA%20Solar%20Generator.%20My%20location%20is"
-          class="btn btn-primary"
-          target="_blank"
-          >Order Now</a
-        >
-      </div>
-    </div>
-    <div class="product-card">
-      <div class="product-img">
-        <img
-          src="{% static 'images/product-004.webp' %}"
-          alt="1.5kVA Solar Generator"
-        />
-      </div>
-      <div class="product-body">
-        <h3>1.5kVA Solar Generator</h3>
-        <p>
-          1.5kVA Solar Generator + 1200W Battery + 2×180W Solar Panels + 30Ah
-          Charge Controller.
-        </p>
-        <p class="price"><i class="fa-solid fa-naira-sign"></i>370,000</p>
-        <a
-          href="https://wa.me/2348140980792?text=Hi%2C%20I%20want%20to%20order%20the%201.5kVA%20Solar%20Generator.%20My%20location%20is"
-          class="btn btn-primary"
-          target="_blank"
-          >Order Now</a
-        >
-      </div>
-    </div>
-    <div class="product-card">
-      <div class="product-img">
-        <img
-          src="{% static 'images/product-003.webp' %}"
-          alt="3kVA Solar Generator"
-        />
-      </div>
-      <div class="product-body">
-        <h3>3kVA Solar Generator</h3>
-        <p>
-          3kVA Solar Generator + 4000W Battery + 4×180W Solar Panels + Charge
-          Controller.
-        </p>
-        <p class="price"><i class="fa-solid fa-naira-sign"></i>810,000</p>
-        <a
-          href="https://wa.me/2348140980792?text=Hi%2C%20I%20want%20to%20order%20the%203kVA%20Solar%20Generator.%20My%20location%20is"
-          class="btn btn-primary"
-          target="_blank"
-          >Order Now</a
-        >
-      </div>
-    </div>
-    <div class="product-card">
-      <div class="product-img">
-        <img src="{% static 'images/product-pc.webp' %}" alt="Dell Latitude" />
-      </div>
-      <div class="product-body">
-        <h3>Dell Latitude</h3>
-        <p>Intel Core i5 Laptop | 8GB RAM | 512GB SSD | Full HD Display</p>
-        <p class="price"><i class="fa-solid fa-naira-sign"></i>510,000</p>
-        <a
-          href="https://wa.me/2348140980792?text=Hi%2C%20I%20want%20to%20order%20the%20Dell%20Latitude%20PC.%20My%20location%20is"
-          class="btn btn-primary"
-          target="_blank"
-          >Order Now</a
-        >
-      </div>
-    </div>
-  </div>
-  <a
-    href="{% url 'solar_generator' %}"
-    target="_blank"
-    class="btn btn-secondary"
-    >Explore More</a
+  <a href="https://wa.link/ve4c4i" target="_blank" class="btn btn-secondary"
+    >See More</a
   >
 </div>
 
-{% include "partials/community.html" %}
-{% endblock content %}
+{% include "partials/digital-products.html" %}
+{% include "partials/community.html" %} {% endblock content %}

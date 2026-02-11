@@ -120,4 +120,7 @@ class JoinCommunityView(View):
     
 def digital_literacy(request):
     return render(request, "core/digital_literacy.html")
+    
+def digital_products(request):
+    return render(request, "core/digital-products.html")
 
