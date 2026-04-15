@@ -1,0 +1,37 @@
+:root {
+  --primary-color: #ff7100;
+  --bg-color: #e7efc7;
+  --dark-color: #000000;
+  --white-color: #fff;
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  --fs-base: clamp(16px, 1.5vw, 20px); /* Body text */
+  --fs-h6: clamp(20px, 1.88vw, 25px);
+  --fs-h5: clamp(25px, 2.35vw, 31.25px);
+  --fs-h4: clamp(20px, 21px, 39.06px);
+  --fs-h3: clamp(23px, 24px, 48.83px);
+  --fs-h2: clamp(1.6rem, 2.5rem, 1.6rem);
+  --fs-h1: clamp(1.6rem, 2.5rem, 1.6rem);
+  /* --fs-h1: clamp(34px, 35px, 76.29px); */
+}
+
+.digital-skill-hero {
+  margin-top: 3rem;
+}
+
+section {
+  scroll-margin-top: 80px;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--dark-color);
+}
+
+.bg-orange-500 {
+  background-color: var(--primary-color);
+}
+
+.text-orange-500 {
+  color: var(--primary-color);
+}

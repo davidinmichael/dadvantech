@@ -22,6 +22,9 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    {% block stylesheet %}
+      
+    {% endblock stylesheet %}
   </head>
   <body>
     {% include "partials/nav.html" %}

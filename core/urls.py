@@ -12,4 +12,5 @@ urlpatterns = [
     path("join-community/", JoinCommunityView.as_view(), name="join_community"),
 	path('digital-literacy/', views.digital_literacy, name="digital_literacy"),
 	path('digital-products/', views.digital_products, name="digital_products"),
+	path('digital-skills-remote-jobs/', views.digital_skills_and_remote_jobs, name="digital_skills_and_remote_jobs"),
 ]

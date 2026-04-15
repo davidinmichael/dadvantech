@@ -125,3 +125,7 @@ def digital_literacy(request):
 def digital_products(request):
     """View to return tech solutions"""
     return render(request, "core/digital-products.html")
+
+def digital_skills_and_remote_jobs(request):
+    """View to return the digital skills page"""
+    return render(request, "core/digital-skills-remote-jobs.html")
