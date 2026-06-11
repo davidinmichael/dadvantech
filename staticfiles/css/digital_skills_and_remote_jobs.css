@@ -13,10 +13,6 @@
   --fs-h1: clamp(1.6rem, 2.5rem, 1.6rem);
 }
 
-.digital-skill-hero {
-  margin-top: 3rem;
-}
-
 section {
   scroll-margin-top: 80px;
 }
