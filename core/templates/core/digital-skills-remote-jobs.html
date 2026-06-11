@@ -1,32 +1,43 @@
-{% extends "base.html" %}
-{% load static %}
-{% block stylesheet %}
-    <link rel="stylesheet" href="{% static 'css/digital_skills_and_remote_jobs.css' %}" />
-{% endblock stylesheet %}
-
-{% block content %}
+{% extends "base.html" %} {% load static %} {% block stylesheet %}
+<link
+  rel="stylesheet"
+  href="{% static 'css/digital_skills_and_remote_jobs.css' %}"
+/>
+{% endblock stylesheet %} {% block content %}
 
 <!-- HERO SECTION -->
 <section class="bg-white py-12 digital-skill-hero">
   <div class="container grid lg:grid-cols-2 gap-8 items-center">
-    
     <!-- TEXT -->
     <div>
-      <h1 class="font-bold mb-4">
-        Digital Skills & Remote Income Starter System
-      </h1>
+      <p class="text-sm mt-3">REMOTE JOB SEARCH SIMPLIFIED</p>
+      <h1 class="font-bold mb-4">Stop Fighting 500 People for One Job</h1>
 
       <p class="mb-4">
-        Discover how to build essential digital skills and access real remote job opportunities using a simple, practical system designed for beginners and job seekers.
+        Discover how to access real remote job opportunities using a simple,
+        practical system designed for beginners and job seekers.
       </p>
 
       <ul class="mb-6 space-y-2">
-        <li><i class="fa fa-check text-orange-500 mr-2"></i>Learn the skills</li>
-        <li><i class="fa fa-check text-orange-500 mr-2"></i>Find real opportunities</li>
-        <li><i class="fa fa-check text-orange-500 mr-2"></i>Position yourself for remote income</li>
+        <li>
+          <i class="fa fa-check text-orange-500 mr-2"></i>You’re not failing
+          because you’re unqualified
+        </li>
+        <li>
+          <i class="fa fa-check text-orange-500 mr-2"></i>You’re failing because
+          you’re competing in the most crowded part of the internet
+        </li>
+        <li>
+          <i class="fa fa-check text-orange-500 mr-2"></i>Position yourself for
+          remote income
+        </li>
       </ul>
 
-      <a href="https://selar.com/6u0337088f" target="_blank" class="bg-orange-500 text-white px-6 py-3 rounded shadow">
+      <a
+        href="https://selar.com/6u0337088f"
+        target="_blank"
+        class="bg-orange-500 text-white px-6 py-3 rounded shadow"
+      >
         GET STARTED FOR ₦5,000
       </a>
 
@@ -38,50 +49,58 @@
     <!-- IMAGE -->
     <div>
       <!-- Recommended size: 1200x800 -->
-      <img src="{% static 'images/digital-skills/book-cover---Digital-Skills.png' %}" alt="Digital Skills & Remote Income Starter System" class="w-full rounded shadow">
+      <img
+        src="{% static 'images/digital-skills/book-cover---Digital-Skills.png' %}"
+        alt="Digital Skills & Remote Income Starter System"
+        class="w-full rounded shadow"
+      />
     </div>
-
   </div>
 </section>
-
 
 <!-- PROBLEM SECTION -->
 <section class="bg-gray-50 py-12">
   <div class="mx-auto max-w-3xl px-4">
     <h2 class="font-bold mb-6">Why Most People Struggle to Get Remote Jobs</h2>
 
-    <p class="mb-6">
-      Every day, thousands of people apply on multiple platforms, send out dozens of applications, and wait for responses that never come.
+    <p class="mb-3">
+      Every day, thousands of people apply on LinkedIn and Indeed, send
+      proposals on Upwork and Fiverr, and submit CVs again and again.
     </p>
+    <p class="mb-2 font-bold">And then wait…</p>
 
-    <div class="space-y-3">
-      <p>Endless applications</p>
-      <p>No responses</p>
-      <p>Frustration and self-doubt</p>
-    </div>
+    <ul class="space-y-3 list-disc pl-6 mb-2">
+      <li>• No responses</li>
+      <li>• No feedback</li>
+      <li>• Nothing</li>
+    </ul>
+    <p class="mb-2">Not because they’re not good enough.</p>
+    <p class="mb-2">
+      But because they’re invisible in a system that is already overcrowded.
+    </p>
   </div>
 </section>
-
 
 <!-- TRUTH SECTION -->
 <section class="py-12">
   <div class="mx-auto max-w-3xl px-4">
     <h2 class="font-bold mb-6">The Real Problem Is Not You</h2>
 
-    <p class="mb-4">
-      You were told to improve your CV, apply to more jobs, and keep trying.
-    </p>
+    <p class="mb-4 font-bold">Here’s what most people don’t realize:</p>
+
+    <p class="mb-4">Most opportunities are not where everyone is looking.</p>
 
     <p class="mb-4">
-      But the truth is simple: most opportunities are not where everyone is looking.
+      By the time you see a job on major platforms, hundreds of people have
+      already applied.
     </p>
 
     <p>
-      You are not just competing on skill — you are competing on visibility, timing, and positioning.
+      At that point, it’s no longer about skill. It’s about timing, visibility,
+      and positioning.
     </p>
   </div>
 </section>
-
 
 <!-- SOLUTION SECTION -->
 <section class="bg-gray-50 py-12">
@@ -89,14 +108,25 @@
     <h2 class="font-bold mb-6">A Smarter Way to Access Remote Opportunities</h2>
 
     <ul class="space-y-3">
-      <li><i class="fa fa-check text-orange-500 mr-2"></i>Identify early-stage opportunities</li>
-      <li><i class="fa fa-check text-orange-500 mr-2"></i>Access real hiring communities</li>
-      <li><i class="fa fa-check text-orange-500 mr-2"></i>Position yourself directly</li>
-      <li><i class="fa fa-check text-orange-500 mr-2"></i>Apply using a high-response method</li>
+      <li>
+        <i class="fa fa-check text-orange-500 mr-2"></i>Find jobs with fewer
+        than 10 applicants
+      </li>
+      <li>
+        <i class="fa fa-check text-orange-500 mr-2"></i>Reach decision-makers
+        directly
+      </li>
+      <li>
+        <i class="fa fa-check text-orange-500 mr-2"></i>Position yourself
+        directly
+      </li>
+      <li>
+        <i class="fa fa-check text-orange-500 mr-2"></i>Apply using a
+        high-response method
+      </li>
     </ul>
   </div>
 </section>
-
 
 <!-- WHAT YOU WILL LEARN -->
 <section class="py-12">
@@ -106,9 +136,9 @@
     </h2>
 
     <div class="grid md:grid-cols-1 gap-8">
-
       <!-- PART 1 -->
       <div class="p-6 shadow rounded">
+        <p class="text-sm mt-3">Start here if you don't have the skills</p>
         <h4 class="font-bold mb-4">Digital Skills Foundation</h4>
         <ul class="space-y-2">
           <li>Computer basics & digital literacy</li>
@@ -124,14 +154,13 @@
       <!-- PART 2 -->
       <div class="p-6 shadow rounded">
         <h4 class="font-bold mb-4">Remote Income System</h4>
+        <p class="mb-2">You’ll learn:</p>
         <ul class="space-y-2">
-          <li>How remote work works</li>
-          <li>Where to find jobs</li>
-          <li>Beginner roles</li>
-          <li>CV & LinkedIn setup</li>
-          <li>Application strategy</li>
-          <li>Avoid scams</li>
-          <li>Daily system</li>
+          <li>• How remote job works</li>
+          <li>• Where to find real remote job opportunities</li>
+          <li>• How to apply in a way that actually gets responses </li>
+          <li>• How to set up a job-ready profile</li>
+          <li>• How to avoid scams and wasted effort</li>
         </ul>
       </div>
 
@@ -145,23 +174,27 @@
           <li>Action templates</li>
         </ul>
       </div>
-
     </div>
   </div>
 </section>
-
 
 <!-- DIFFERENCE SECTION -->
 <section class="bg-gray-50 py-12">
   <div class="mx-auto max-w-3xl px-4">
     <h2 class="font-bold mb-6">This Is Not Just a Learning Guide</h2>
 
-    <p>
-      You are not just learning tools — you are learning how to use them to access real income opportunities and position yourself strategically.
+    <p class="mb-2">
+      You are not just learning tools — you are learning how to use them to
+      access real income opportunities and position yourself strategically.
     </p>
+    <p class="font-bold mb-2">This approach is already helping people:</p>
+    <ul class="space-y-2">
+      <li>• Move from confusion to clarity </li>
+      <li>• Stop wasting time on crowded platforms </li>
+      <li>• And start seeing real opportunities </li>
+    </ul>
   </div>
 </section>
-
 
 <!-- WHO IT IS FOR -->
 <section class="py-12">
@@ -178,7 +211,6 @@
   </div>
 </section>
 
-
 <!-- WHAT YOU GET -->
 <section class="bg-gray-50 py-12">
   <div class="mx-auto max-w-3xl px-4">
@@ -194,7 +226,6 @@
   </div>
 </section>
 
-
 <!-- PRICE SECTION -->
 <section class="py-12 text-center">
   <div class="container max-w-xl">
@@ -206,12 +237,15 @@
 
     <p class="mb-6">Limited introductory offer</p>
 
-    <a href="https://selar.com/6u0337088f" target="_blank" class="bg-orange-500 text-white px-6 py-3 rounded shadow">
+    <a
+      href="https://selar.com/6u0337088f"
+      target="_blank"
+      class="bg-orange-500 text-white px-6 py-3 rounded shadow"
+    >
       Get Access Now
     </a>
   </div>
 </section>
-
 
 <!-- FINAL CTA -->
 <section class="bg-black text-white py-12 text-center">
@@ -221,24 +255,28 @@
     </h2>
 
     <p class="mb-6">
-      Start building skills and positioning yourself for real remote opportunities today.
+      Start building skills and positioning yourself for real remote
+      opportunities today.
     </p>
 
-    <a href="https://selar.com/6u0337088f" target="_blank" class="bg-orange-500 px-6 py-3 rounded">
+    <a
+      href="https://selar.com/6u0337088f"
+      target="_blank"
+      class="bg-orange-500 px-6 py-3 rounded"
+    >
       Get Instant Access for ₦5,000
     </a>
   </div>
 </section>
 
-
 <!-- FOOTER DISCLAIMER -->
 <section class="py-6 text-center">
   <div class="container max-w-3xl">
     <p>
-      Results depend on individual effort, consistency, and application of the system.
+      Results depend on individual effort, consistency, and application of the
+      system.
     </p>
   </div>
 </section>
 
-{% include "partials/community.html" %}
-{% endblock content %}
+{% include "partials/community.html" %} {% endblock content %}
