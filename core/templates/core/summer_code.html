@@ -1,0 +1,834 @@
+{% extends "base.html" %} {% load static %} {% block stylesheet %}
+<link rel="stylesheet" href="{% static 'css/summer_code.css' %}" />
+{% endblock stylesheet %} {% block content %}
+<!-- Hero -->
+<section class="hero" id="hero">
+  <div class="container hero__container">
+    <div class="hero__content">
+      <span class="hero__badge text-orange-500">
+        Online Summer Code Camp 2026
+      </span>
+
+      <h1>
+        2026 Online Summer Code Camp for
+        <span class="text-orange-500">Kids & Teens</span>
+      </h1>
+
+      <p class="hero__lead">
+        Keep your child engaged this holiday with practical digital skills that
+        prepare them for the future.
+      </p>
+
+      <p>
+        For ages <strong>6–18 years</strong>, our live instructor-led online
+        camp introduces children to coding, computer skills, Artificial
+        Intelligence (AI), digital literacy, and creative technology projects in
+        a fun and supportive learning environment.
+      </p>
+
+      <div class="hero__highlights">
+        <div class="highlight-item">
+          <i class="fa-solid fa-circle-check"></i>
+          <span>Live Online Classes</span>
+        </div>
+
+        <div class="highlight-item">
+          <i class="fa-solid fa-circle-check"></i>
+          <span>5-Week Summer Program</span>
+        </div>
+
+        <div class="highlight-item">
+          <i class="fa-solid fa-circle-check"></i>
+          <span>Ages 6–18</span>
+        </div>
+
+        <div class="highlight-item">
+          <i class="fa-solid fa-circle-check"></i>
+          <span>Monday – Friday</span>
+        </div>
+
+        <div class="highlight-item">
+          <i class="fa-solid fa-circle-check"></i>
+          <span>10:00 AM – 4:00 PM</span>
+        </div>
+
+        <div class="highlight-item">
+          <i class="fa-solid fa-circle-check"></i>
+          <span>Small Learning Groups</span>
+        </div>
+
+        <div class="highlight-item">
+          <i class="fa-solid fa-circle-check"></i>
+          <span>Certificate of Completion</span>
+        </div>
+      </div>
+
+      <div class="hero__buttons">
+        <a href="#register" class="btn btn-primary"> Register Now! </a>
+
+        <a href="#faq" class="btn btn-secondary"> Questions? </a>
+      </div>
+    </div>
+
+    <div class="hero__image">
+      <img
+        src="https://res.cloudinary.com/dskpdlvxu/image/upload/v1784121133/2149041152_bp5aoy.jpg"
+        alt="Kids participating in an online coding class"
+      />
+    </div>
+  </div>
+</section>
+<!-- Why this camp -->
+<section class="why-camp" id="why-camp">
+  <div class="container why-camp__container">
+    <div class="why-camp__image">
+      <img
+        src="https://res.cloudinary.com/dskpdlvxu/image/upload/v1784120841/254_pkl0hb.jpg"
+        alt="Children learning coding online"
+      />
+    </div>
+
+    <div class="why-camp__content">
+      <span class="section-tag text-orange-500">WHY THIS CAMP?</span>
+
+      <h2>Give Your Child a Productive Holiday</h2>
+
+      <p class="lead">
+        Instead of spending the entire holiday on games and social media, let
+        them learn practical digital skills while having fun.
+      </p>
+
+      <p>
+        Our Summer Code Camp is designed to introduce children and teenagers to
+        technology through engaging lessons, hands-on projects, creative
+        challenges, and teamwork.
+      </p>
+
+      <div class="why-note">
+        <i class="fa-solid fa-circle-check"></i>
+        <span>No previous coding experience is required.</span>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- what you'll learn -->
+<section class="learn" id="learn">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag text-orange-500">WHAT THEY WILL LEARN</span>
+      <h2>Practical Digital Skills</h2>
+      <p>
+        Students gain hands-on experience with modern technology through fun,
+        engaging lessons and practical projects.
+      </p>
+    </div>
+
+    <div class="learn__grid">
+      <article class="learn-card">
+        <div class="learn-card__icon">
+          <i class="fa-solid fa-computer"></i>
+        </div>
+
+        <h3>Computer Foundations</h3>
+
+        <ul>
+          <li>Computer Basics</li>
+          <li>Keyboard & Mouse Skills</li>
+          <li>Internet Fundamentals</li>
+          <li>Online Safety</li>
+          <li>Responsible Digital Habits</li>
+        </ul>
+      </article>
+
+      <article class="learn-card">
+        <div class="learn-card__icon">
+          <i class="fa-solid fa-globe"></i>
+        </div>
+
+        <h3>Digital Literacy</h3>
+
+        <ul>
+          <li>Google Search</li>
+          <li>Google Docs</li>
+          <li>Canva</li>
+          <li>Email</li>
+          <li>Online Productivity</li>
+        </ul>
+      </article>
+
+      <article class="learn-card">
+        <div class="learn-card__icon">
+          <i class="fa-solid fa-robot"></i>
+        </div>
+
+        <h3>Artificial Intelligence</h3>
+
+        <ul>
+          <li>ChatGPT</li>
+          <li>AI Image Generation</li>
+          <li>Writing Better Prompts</li>
+          <li>AI for School</li>
+          <li>AI for Creativity</li>
+          <li>Using AI Responsibly</li>
+        </ul>
+      </article>
+
+      <article class="learn-card">
+        <div class="learn-card__icon">
+          <i class="fa-solid fa-code"></i>
+        </div>
+
+        <h3>Web Development</h3>
+
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript <small>(Age Appropriate)</small></li>
+        </ul>
+      </article>
+
+      <article class="learn-card">
+        <div class="learn-card__icon">
+          <i class="fa-solid fa-gamepad"></i>
+        </div>
+
+        <h3>Creative Coding</h3>
+
+        <ul>
+          <li>Scratch Programming</li>
+          <li>Blockly</li>
+          <li>Animation</li>
+          <li>Storytelling</li>
+          <li>Interactive Games</li>
+        </ul>
+      </article>
+
+      <article class="learn-card">
+        <div class="learn-card__icon">
+          <i class="fa-solid fa-network-wired"></i>
+        </div>
+
+        <h3>Networking Basics</h3>
+
+        <ul>
+          <li>WiFi</li>
+          <li>Internet</li>
+          <li>Router</li>
+          <li>LAN</li>
+          <li>Cloud Computing</li>
+          <li>IP Address</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- Age Group -->
+<section class="age-groups" id="age-groups">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag text-orange-500">OUR AGE GROUPS</span>
+      <h2>Choose the Right Learning Path</h2>
+      <p>
+        Every student learns differently. Our curriculum is carefully designed
+        to match each age group's level and learning pace.
+      </p>
+    </div>
+
+    <div class="age-groups__grid">
+      <!-- Group A -->
+      <article class="age-card">
+        <div class="age-card__header">
+          <span class="age-card__group">Group A</span>
+          <h3>Ages 6–9 Years</h3>
+          <p class="age-card__tagline">Discover • Create • Play</p>
+        </div>
+
+        <p class="age-card__description">
+          Perfect for young learners beginning their technology journey.
+        </p>
+
+        <h4>Students will learn:</h4>
+
+        <ul>
+          <li>Computer Basics</li>
+          <li>Digital Literacy</li>
+          <li>AI for Kids</li>
+          <li>Scratch Programming</li>
+          <li>Creative Projects</li>
+          <li>Games & Animation</li>
+        </ul>
+
+        <a href="#register" class="btn btn-primary">Register</a>
+      </article>
+
+      <!-- Group B -->
+      <article class="age-card featured">
+        <!-- <div class="featured-badge">Most Popular</div> -->
+
+        <div class="age-card__header">
+          <span class="age-card__group">Group B</span>
+          <h3>Ages 10–13 Years</h3>
+          <p class="age-card__tagline">Learn • Build • Explore</p>
+        </div>
+
+        <p class="age-card__description">
+          Students begin building real websites while learning important digital
+          skills.
+        </p>
+
+        <h4>Students will learn:</h4>
+
+        <ul>
+          <li>Computer Foundations</li>
+          <li>Digital Literacy</li>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript Basics</li>
+          <li>AI Productivity</li>
+          <li>Project Building</li>
+        </ul>
+
+        <a href="#register" class="btn btn-primary">Register</a>
+      </article>
+
+      <!-- Group C -->
+      <article class="age-card">
+        <div class="age-card__header">
+          <span class="age-card__group">Group C</span>
+          <h3>Ages 14–18 Years</h3>
+          <p class="age-card__tagline">Build Like a Developer</p>
+        </div>
+
+        <p class="age-card__description">
+          For teenagers ready to gain practical web development and digital
+          skills.
+        </p>
+
+        <h4>Students will learn:</h4>
+
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>AI Productivity</li>
+          <li>GitHub Basics</li>
+          <li>Responsive Websites</li>
+          <li>Real Projects</li>
+        </ul>
+
+        <a href="#register" class="btn btn-primary">Register</a>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- How this camp works -->
+<section class="camp-runs" id="camp-runs">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag text-orange-500"> HOW THE CAMP RUNS </span>
+
+      <h2>Live Interactive Online Classes</h2>
+
+      <p>
+        Our classes are conducted completely online, allowing students to learn
+        from the comfort of their homes. Every session is instructor-led with
+        practical exercises, project-based learning, and continuous guidance
+        throughout the five-week program.
+      </p>
+    </div>
+
+    <div class="camp-runs__grid">
+      <article class="camp-card">
+        <div class="camp-card__icon">
+          <i class="fa-solid fa-video"></i>
+        </div>
+
+        <h3>Live Online Classes</h3>
+
+        <p>
+          Join live sessions with experienced instructors, ask questions, and
+          participate in interactive practical lessons.
+        </p>
+      </article>
+
+      <article class="camp-card">
+        <div class="camp-card__icon">
+          <i class="fa-solid fa-calendar-days"></i>
+        </div>
+
+        <h3>Camp Schedule</h3>
+
+        <p><strong>Monday – Friday</strong></p>
+        <p>10:00 AM – 4:00 PM</p>
+      </article>
+
+      <article class="camp-card">
+        <div class="camp-card__icon">
+          <i class="fa-solid fa-clock"></i>
+        </div>
+
+        <h3>Duration</h3>
+
+        <p class="camp-duration">5 Weeks</p>
+
+        <p>
+          A structured program designed to help students progressively build
+          practical technology skills.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- Benefits -->
+<section class="camp-features" id="camp-features">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag text-orange-500">
+        WHAT MAKES OUR CAMP DIFFERENT?
+      </span>
+
+      <h2>More Than Just Coding Lessons</h2>
+
+      <p>
+        We combine expert instruction, practical learning, and engaging
+        activities to create an enjoyable and rewarding experience for every
+        student.
+      </p>
+    </div>
+
+    <div class="camp-features__grid">
+      <article class="feature-card">
+        <div class="feature-icon">
+          <i class="fa-solid fa-chalkboard-user"></i>
+        </div>
+
+        <h3>Live Instructors</h3>
+
+        <p>
+          Real teachers guide students throughout the camp, answer questions,
+          and provide support every step of the way.
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon">
+          <i class="fa-solid fa-laptop-code"></i>
+        </div>
+
+        <h3>Practical Learning</h3>
+
+        <p>
+          Students learn by building real projects instead of simply watching
+          videos.
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon">
+          <i class="fa-solid fa-users"></i>
+        </div>
+
+        <h3>Small Learning Groups</h3>
+
+        <p>
+          Every child receives the attention, encouragement, and guidance they
+          need to succeed.
+        </p>
+      </article>
+
+      <article class="feature-card feature-card--large">
+        <div class="feature-icon">
+          <i class="fa-solid fa-trophy"></i>
+        </div>
+
+        <h3>Fun Activities</h3>
+
+        <ul>
+          <li>Games</li>
+          <li>Coding Challenges</li>
+          <li>Quizzes</li>
+          <li>Weekly Competitions</li>
+          <li>Project Showcase</li>
+        </ul>
+      </article>
+
+      <article class="feature-card">
+        <div class="feature-icon">
+          <i class="fa-solid fa-star"></i>
+        </div>
+
+        <h3>Lifetime Confidence</h3>
+
+        <p>
+          Students finish the camp with practical skills and the confidence to
+          continue learning and building long after the holiday.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- Who can join -->
+<section class="who-can-join" id="who-can-join">
+  <div class="container who-can-join__container">
+    <div class="who-can-join__image">
+      <img
+        src="https://res.cloudinary.com/dskpdlvxu/image/upload/v1784121505/2149891341_fjnvmw.jpg"
+        alt="Happy students learning technology online"
+      />
+    </div>
+
+    <div class="who-can-join__content">
+      <span class="section-tag text-orange-500"> WHO CAN JOIN? </span>
+
+      <h2>Designed for Every Young Learner</h2>
+
+      <p class="lead">
+        Whether your child is completely new to technology or already curious
+        about coding, there's a place for them in our Summer Code Camp.
+      </p>
+
+      <ul class="join-list">
+        <li>Primary School Pupils</li>
+        <li>Secondary School Students</li>
+        <li>Beginners with No Coding Experience</li>
+        <li>Students Interested in Technology</li>
+        <li>Future Software Developers</li>
+        <li>Creative Young Minds</li>
+      </ul>
+
+      <div class="join-note">
+        <i class="fa-solid fa-circle-check"></i>
+        <span>No previous programming knowledge is required.</span>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- What they will build -->
+<section class="projects" id="projects">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag text-orange-500">
+        WHAT YOUR CHILD WILL BUILD
+      </span>
+
+      <h2>Real Projects. Real Skills.</h2>
+
+      <p>
+        Depending on their age group, students will build exciting projects that
+        help them practice what they learn throughout the camp.
+      </p>
+    </div>
+
+    <div class="projects__grid">
+      <article class="project-card">
+        <img
+          src="https://res.cloudinary.com/dskpdlvxu/image/upload/v1784121997/2333343_308650-P8EW2H-258_wdbrgi.jpg"
+          alt="Personal Web Page Project"
+        />
+        <h3>Personal Web Pages</h3>
+      </article>
+
+      <article class="project-card">
+        <img
+          src="https://res.cloudinary.com/dskpdlvxu/image/upload/v1784121997/84406312_9976128_uqtowv.jpg"
+          alt="Interactive Website Project"
+        />
+        <h3>Interactive Websites</h3>
+      </article>
+
+      <article class="project-card">
+        <img
+          src="https://res.cloudinary.com/dskpdlvxu/image/upload/v1784121997/scratch_cover_update_t7mqkf.jpg"
+          alt="Scratch Game Project"
+        />
+        <h3>Scratch Games</h3>
+      </article>
+
+      <article class="project-card">
+        <img
+          src="https://res.cloudinary.com/dskpdlvxu/image/upload/v1784121999/10071115_4347381_vyxvmj.jpg"
+          alt="Digital Poster Project"
+        />
+        <h3>Digital Posters</h3>
+      </article>
+
+      <article class="project-card">
+        <img
+          src="https://res.cloudinary.com/dskpdlvxu/image/upload/v1784121999/65593463_156Z_2305.w017.n001.54B.p12.54_nr98ks.jpg"
+          alt="AI Generated Story Project"
+        />
+        <h3>AI-Generated Stories</h3>
+      </article>
+
+      <article class="project-card">
+        <img
+          src="https://res.cloudinary.com/dskpdlvxu/image/upload/v1784121998/26876779_Conversation_between_chat_bot_on_screen_of_phone_and_customer_mm9kln.jpg"
+          alt="Animation Project"
+        />
+        <h3>Animations</h3>
+      </article>
+
+      <article class="project-card">
+        <img
+          src="https://res.cloudinary.com/dskpdlvxu/image/upload/v1784122003/2922218_26940_sznrjs.jpg"
+          alt="Mini JavaScript Project"
+        />
+        <h3>Mini JavaScript Projects</h3>
+      </article>
+    </div>
+  </div>
+</section>
+<!-- What parents get -->
+<section class="parents-benefits" id="parents-benefits">
+  <div class="container parents-benefits__container">
+    <div class="parents-benefits__content">
+      <span class="section-tag text-orange-500"> WHAT PARENTS RECEIVE </span>
+
+      <h2>Stay Involved Every Step of the Way</h2>
+
+      <p>
+        Throughout the camp, parents are kept informed about their child's
+        learning journey with regular updates, reminders, and dedicated support.
+      </p>
+
+      <div class="parents-benefits__list">
+        <div class="benefit-item">
+          <i class="fa-solid fa-chart-line"></i>
+          <span>Weekly Progress Updates</span>
+        </div>
+
+        <div class="benefit-item">
+          <i class="fa-solid fa-bell"></i>
+          <span>Assignment Reminders</span>
+        </div>
+
+        <div class="benefit-item">
+          <i class="fa-solid fa-bullhorn"></i>
+          <span>Important Announcements</span>
+        </div>
+
+        <div class="benefit-item">
+          <i class="fa-solid fa-headset"></i>
+          <span>Camp Support</span>
+        </div>
+
+        <div class="benefit-item">
+          <i class="fa-solid fa-certificate"></i>
+          <span>Certificate of Completion</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="parents-benefits__image">
+      <img
+        src="https://res.cloudinary.com/dskpdlvxu/image/upload/v1784121589/10585_gpipgr.jpg"
+        alt="Parent supporting child during an online coding class"
+      />
+    </div>
+  </div>
+</section>
+<!-- FAQs -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag text-orange-500">
+        FREQUENTLY ASKED QUESTIONS
+      </span>
+
+      <h2>Frequently Asked Questions</h2>
+
+      <p>
+        Have questions? Here are answers to the most common questions parents
+        ask about our Summer Code Camp.
+      </p>
+    </div>
+
+    <div class="faq__container">
+      <div class="faq-item active">
+        <button class="faq-question">
+          <span>Does my child need coding experience?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+
+        <div class="faq-answer">
+          <p>
+            No. The camp is completely beginner-friendly and designed for
+            students with or without coding experience.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>What device is required?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+
+        <div class="faq-answer">
+          <p>
+            A laptop is recommended. A desktop computer also works well. Some
+            activities may not be suitable on mobile phones.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Is the camp live?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+
+        <div class="faq-answer">
+          <p>
+            Yes. Every class is conducted live with experienced instructors.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Will classes be recorded?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+
+        <div class="faq-answer">
+          <p>Yes. Students who miss a class can watch the recording later.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Will students receive certificates?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+
+        <div class="faq-answer">
+          <p>
+            Yes. Every student who completes the program receives a Certificate
+            of Completion.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>How long is the camp?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+
+        <div class="faq-answer">
+          <p>The camp runs for five weeks.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Is there a minimum age?</span>
+          <i class="fa-solid fa-plus"></i>
+        </button>
+
+        <div class="faq-answer">
+          <p>Yes. Children must be at least 6 years old to participate.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CTA -->
+<section class="cta" id="cta">
+  <div class="container">
+    <div class="cta__content">
+      <span class="cta__tag"> Limited Spaces Available </span>
+
+      <h2>Give Your Child a Holiday They'll Never Forget</h2>
+
+      <p>
+        This summer, let your child learn valuable technology skills, build
+        exciting projects, make new friends, and discover the world of coding in
+        a fun and supportive online environment.
+      </p>
+
+      <p class="cta__note">
+        Spaces are limited to ensure every student receives the attention they
+        deserve.
+      </p>
+
+      <a href="#register" class="btn cta__btn"> Register Now! </a>
+    </div>
+  </div>
+</section>
+<!-- Regisster -->
+<section class="registration" id="register">
+  <div class="container registration__container">
+    <div class="registration__content">
+      <span class="section-tag text-orange-500"> REGISTER NOW </span>
+
+      <h2>Reserve Your Child's Spot</h2>
+
+      <p>
+        Fill in the form below and you'll be redirected to WhatsApp with your
+        registration details already prepared. Simply review the message and
+        send it.
+      </p>
+    </div>
+
+    <form id="registrationForm" class="registration-form">
+      <div class="form-group">
+        <label for="parentName">Parent/Guardian Name</label>
+        <input type="text" id="parentName" placeholder="John Doe" required />
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="+234..." required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email (Optional)</label>
+        <input type="email" id="email" placeholder="example@email.com" />
+      </div>
+
+      <div class="form-group">
+        <label for="childrenCount">Number of Children</label>
+
+        <select id="childrenCount" required>
+          <option value="">Select</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5+</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="ageGroup">Preferred Age Group</label>
+
+        <select id="ageGroup" required>
+          <option value="">Select Age Group</option>
+          <option>Group A (6–9 Years)</option>
+          <option>Group B (10–13 Years)</option>
+          <option>Group C (14–18 Years)</option>
+          <option>Not Sure Yet</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Additional Information (Optional)</label>
+
+        <textarea
+          id="message"
+          rows="4"
+          placeholder="Anything you'd like us to know..."
+        ></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">
+        Continue on WhatsApp
+      </button>
+    </form>
+  </div>
+</section>
+{% endblock content %} {% block script %}
+<script src="{% static 'js/summer_code.js' %}"></script>
+{% endblock script %}

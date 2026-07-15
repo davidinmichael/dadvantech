@@ -129,3 +129,8 @@ def digital_products(request):
 def digital_skills_and_remote_jobs(request):
     """View to return the digital skills page"""
     return render(request, "core/digital-skills-remote-jobs.html")
+
+def summer_code(request):
+    """View to see the summer"""
+
+    return render(request, "core/summer_code.html")
