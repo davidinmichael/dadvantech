@@ -18,5 +18,5 @@ urlpatterns = [
         views.digital_skills_and_remote_jobs,
         name="digital_skills_and_remote_jobs",
     ),
-    path("summer-code-camp/", views.summer_code, name="summer_code"),
+    path("camp/", views.summer_code, name="summer_code"),
 ]
