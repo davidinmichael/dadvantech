@@ -1,0 +1,1115 @@
+:root {
+  --primary-color: #ff7100;
+  --bg-color: #e7efc7;
+  --dark-color: #000000;
+  --white-color: #fff;
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  --fs-base: clamp(16px, 1.5vw, 20px); /* Body text */
+  --fs-h6: clamp(20px, 1.88vw, 25px);
+  --fs-h5: clamp(25px, 2.35vw, 31.25px);
+  --fs-h4: clamp(20px, 21px, 39.06px);
+  --fs-h3: clamp(23px, 24px, 48.83px);
+  --fs-h2: clamp(1.6rem, 2.5rem, 1.6rem);
+  --fs-h1: clamp(1.6rem, 2.5rem, 1.6rem);
+}
+
+/* section {
+  scroll-margin-top: 80px;
+} */
+
+/* .weekend-cheque {
+  background-color: var(--dark-color);
+} */
+
+h1,
+h2,
+h3 {
+  color: var(--dark-color);
+}
+
+.bg-orange-500 {
+  background-color: var(--primary-color);
+}
+
+.text-orange-500 {
+  color: var(--primary-color);
+}
+
+/* ================================
+   Section 01: Announcement Bar
+   ================================ */
+
+.announcement-bar {
+  width: 100%;
+}
+
+.announcement-bar p {
+  line-height: 1.5;
+}
+
+/* ================================
+   Section 02: Hero
+   ================================ */
+
+.hero-section {
+  width: 100%;
+}
+
+.hero-section h1 {
+  font-size: clamp(2.5rem, 5.5vw, 5rem);
+}
+
+.hero-section h2 {
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+}
+
+.hero-section p {
+  font-size: var(--fs-base);
+}
+
+/* ================================
+   Section 03: The Reality
+   ================================ */
+
+.reality-section {
+  width: 100%;
+}
+
+.reality-section h2 {
+  font-size: clamp(1.8rem, 3.5vw, 3rem);
+}
+
+.reality-section p {
+  font-size: var(--fs-base);
+}
+
+/* ================================
+   Section 04: Agitation
+   ================================ */
+
+.agitation-section {
+  width: 100%;
+}
+
+.agitation-section h2 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+}
+
+.agitation-item {
+  padding: 2rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.agitation-item:first-of-type {
+  padding-top: 0;
+}
+
+.agitation-item h3 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.35rem, 2.2vw, 1.8rem);
+  line-height: 1.35;
+  font-weight: 900;
+}
+
+.agitation-item p {
+  margin: 0;
+  font-size: var(--fs-base);
+  line-height: 1.8;
+  color: #333;
+}
+
+/* ================================
+   Section 05: The Wrong Door
+   ================================ */
+
+.wrong-door-section {
+  width: 100%;
+}
+
+.wrong-door-section h2 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+}
+
+.wrong-door-step {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border: 2px solid #000;
+  border-radius: 0.75rem;
+  background: var(--bg-color);
+}
+
+.wrong-door-step > span {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  background: var(--dark-color);
+  color: var(--white-color);
+  font-size: 0.875rem;
+  font-weight: 900;
+}
+
+.wrong-door-step p {
+  margin: 0;
+  font-size: var(--fs-base);
+  line-height: 1.5;
+}
+
+.wrong-door-problem {
+  padding: 2rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.wrong-door-problem h4 {
+  margin-bottom: 0.75rem;
+  font-size: clamp(1.25rem, 2.2vw, 1.75rem);
+  line-height: 1.4;
+  font-weight: 900;
+}
+
+.wrong-door-problem h4 span {
+  color: var(--primary-color);
+}
+
+.wrong-door-problem p {
+  margin: 0;
+  font-size: var(--fs-base);
+  line-height: 1.8;
+  color: #333;
+}
+
+.wrong-door-conclusion {
+  box-shadow: var(--box-shadow);
+}
+
+/* ================================
+   Section 06: The New Door
+   ================================ */
+
+.new-door-section {
+  width: 100%;
+}
+
+.new-door-section h2 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+}
+
+.new-door-process-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: var(--white-color);
+  box-shadow: var(--box-shadow);
+}
+
+.new-door-process-card span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  background: var(--primary-color);
+  color: var(--white-color);
+  font-size: 0.875rem;
+  font-weight: 900;
+}
+
+.new-door-process-card p {
+  margin: 0;
+  font-size: var(--fs-base);
+  line-height: 1.6;
+  font-weight: 700;
+}
+
+.new-door-section > div {
+  position: relative;
+}
+
+/* ================================
+   Section 07: CCC Framework
+   ================================ */
+
+.ccc-section {
+  width: 100%;
+}
+
+.ccc-section h2 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+}
+
+.ccc-card {
+  padding: 2rem;
+  border: 2px solid var(--dark-color);
+  border-radius: 1.25rem;
+  background: var(--white-color);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+}
+
+.ccc-letter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.5rem;
+  height: 4.5rem;
+  margin: 0 auto 1.5rem;
+  border-radius: 9999px;
+  background: var(--primary-color);
+  color: var(--white-color);
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.ccc-card h3 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 900;
+}
+
+.ccc-card p {
+  margin: 0;
+  font-size: var(--fs-base);
+  line-height: 1.7;
+  color: #333;
+}
+
+.ccc-section .bg-black {
+  box-shadow: var(--box-shadow);
+}
+
+/* ================================
+   Section 08: Real Results
+   ================================ */
+
+.results-section {
+  width: 100%;
+}
+
+.results-section h2 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+}
+
+.result-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  background: var(--white-color);
+  box-shadow: var(--box-shadow);
+}
+
+.result-card-header {
+  padding: 1.75rem 1.75rem 1.5rem;
+  background: var(--dark-color);
+}
+
+.result-card-header p {
+  margin: 0 0 0.5rem;
+  color: var(--primary-color);
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  line-height: 1.5;
+}
+
+.result-card-header h3 {
+  margin: 0;
+  color: var(--white-color);
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  font-weight: 900;
+}
+
+.result-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.75rem;
+}
+
+.result-card-body p {
+  margin: 0;
+  font-size: var(--fs-base);
+  line-height: 1.75;
+  color: #333;
+}
+
+.result-card-result {
+  padding: 1.75rem;
+  background: var(--primary-color);
+  text-align: center;
+}
+
+.result-card-result p {
+  margin: 0 0 0.35rem;
+  color: var(--white-color);
+  font-size: 0.875rem;
+  font-weight: 800;
+}
+
+.result-card-result strong {
+  display: block;
+  color: var(--white-color);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+/* ================================
+   Section 09: Program Introduction
+   ================================ */
+
+.program-intro-section {
+  width: 100%;
+}
+
+.program-intro-section h2 {
+  font-size: clamp(3rem, 7vw, 6rem);
+}
+
+.program-pillar-preview {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 1rem;
+  background: var(--bg-color);
+  text-align: left;
+}
+
+.program-pillar-preview span {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  background: var(--primary-color);
+  color: var(--white-color);
+  font-size: 1.25rem;
+  font-weight: 900;
+}
+
+.program-pillar-preview p {
+  margin: 0;
+  font-size: var(--fs-base);
+  font-weight: 900;
+}
+
+/* ================================
+   Section 10: Pillar One
+   ================================ */
+
+.pillar-section {
+  width: 100%;
+}
+
+.pillar-section h2 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+}
+
+.pillar-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  height: 5rem;
+  margin: 0 auto;
+  border-radius: 9999px;
+  background: var(--primary-color);
+  color: var(--white-color);
+  font-size: 2rem;
+  font-weight: 900;
+  box-shadow: var(--box-shadow);
+}
+
+.training-card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 1.25rem;
+  background: var(--white-color);
+  box-shadow: var(--box-shadow);
+}
+
+.training-number {
+  align-self: flex-start;
+  margin-bottom: 1rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 9999px;
+  background: var(--primary-color);
+  color: var(--white-color);
+  font-size: 0.75rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.training-card h3 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+  line-height: 1.3;
+  font-weight: 900;
+}
+
+.training-card p {
+  margin: 0;
+  font-size: var(--fs-base);
+  line-height: 1.75;
+  color: #333;
+}
+
+.pillar-conclusion {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+  border-radius: 1.25rem;
+  background: var(--dark-color);
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+
+.pillar-conclusion p {
+  margin: 0;
+  color: var(--white-color);
+  font-size: clamp(1.1rem, 2vw, 1.5rem);
+  font-weight: 800;
+  line-height: 1.7;
+}
+
+.pillar-conclusion p + p {
+  margin-top: 0.5rem;
+}
+
+.pillar-conclusion span {
+  color: var(--primary-color);
+}
+
+/* ================================
+   Section 13: Bonuses
+   ================================ */
+
+.bonuses-section {
+  width: 100%;
+}
+
+.bonuses-section h2 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+}
+
+.bonus-card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 1.25rem;
+  background: var(--bg-color);
+  box-shadow: var(--box-shadow);
+}
+
+.bonus-label {
+  align-self: flex-start;
+  margin-bottom: 1rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 9999px;
+  background: var(--dark-color);
+  color: var(--white-color);
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.bonus-card h3 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.3rem, 2.5vw, 1.8rem);
+  line-height: 1.35;
+  font-weight: 900;
+}
+
+.bonus-card p {
+  margin: 0;
+  font-size: var(--fs-base);
+  line-height: 1.75;
+  color: #333;
+}
+
+.bonus-card-featured {
+  background: var(--dark-color);
+  color: var(--white-color);
+}
+
+.bonus-card-featured h3 {
+  color: var(--white-color);
+}
+
+.bonus-card-featured p {
+  color: var(--white-color);
+}
+
+.bonus-label-featured {
+  background: var(--primary-color);
+}
+
+/* ================================
+   Section 14: Pricing
+   ================================ */
+
+.pricing-section {
+  width: 100%;
+}
+
+.pricing-section h2 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+}
+
+.pricing-group {
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  background: var(--white-color);
+  box-shadow: var(--box-shadow);
+}
+
+.pricing-group h3 {
+  margin-bottom: 1.25rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--dark-color);
+  font-size: 1.2rem;
+  font-weight: 900;
+  line-height: 1.4;
+}
+
+.pricing-group h3 span {
+  display: block;
+  color: var(--primary-color);
+}
+
+.pricing-item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.pricing-item:last-child {
+  border-bottom: 0;
+}
+
+.pricing-item span {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.pricing-item strong {
+  flex-shrink: 0;
+  font-size: 0.95rem;
+  font-weight: 900;
+}
+
+.value-total {
+  padding: 2rem;
+  border: 3px solid var(--dark-color);
+  border-radius: 1.25rem;
+  background: var(--white-color);
+  text-align: center;
+}
+
+.value-total p,
+.actual-price p {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.value-total strong {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-weight: 900;
+  text-decoration: line-through;
+}
+
+.actual-price {
+  padding: 2.5rem 1.5rem;
+  border-radius: 1.5rem;
+  background: var(--primary-color);
+  color: var(--white-color);
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+
+.actual-price p {
+  color: var(--white-color);
+}
+
+.actual-price strong {
+  display: block;
+  margin: 0.5rem 0;
+  color: var(--white-color);
+  font-size: clamp(3.5rem, 8vw, 6rem);
+  font-weight: 900;
+  line-height: 1;
+}
+
+.actual-price .price-note {
+  font-size: 1rem;
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.price-note-section {
+  padding: 2rem 0;
+}
+
+.price-note-section h3 {
+  margin-bottom: 1.25rem;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 900;
+}
+
+.price-note-section p {
+  margin-bottom: 1.25rem;
+  font-size: var(--fs-base);
+  line-height: 1.8;
+  color: #333;
+}
+
+.price-note-section p:last-child {
+  margin-bottom: 0;
+}
+
+.pricing-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  background: var(--dark-color);
+  color: var(--white-color);
+  font-size: 1rem;
+  font-weight: 900;
+  text-decoration: none;
+  box-shadow: var(--box-shadow);
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.pricing-cta:hover {
+  transform: translateY(-2px);
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+
+/* ================================
+   Section 15: Guarantee
+   ================================ */
+
+.guarantee-section {
+  width: 100%;
+}
+
+.guarantee-box {
+  padding: 2.5rem 1.5rem;
+  border: 3px solid var(--dark-color);
+  border-radius: 1.5rem;
+  background: var(--bg-color);
+  text-align: center;
+  box-shadow: var(--box-shadow);
+}
+
+.guarantee-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 6rem;
+  margin: 0 auto;
+  border-radius: 9999px;
+  background: var(--primary-color);
+  color: var(--white-color);
+  font-size: 2.5rem;
+  font-weight: 900;
+  box-shadow: var(--box-shadow);
+}
+
+.guarantee-box h2 {
+  font-size: clamp(2rem, 4vw, 3.25rem);
+}
+
+.guarantee-box > div:not(.guarantee-number) {
+  font-size: var(--fs-base);
+}
+
+.guarantee-condition {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background: var(--dark-color);
+  text-align: left;
+}
+
+.guarantee-condition p {
+  margin: 0;
+  color: var(--white-color);
+}
+
+.guarantee-condition p + p {
+  margin-top: 1rem;
+}
+
+.guarantee-condition strong {
+  color: var(--primary-color);
+}
+
+/* ================================
+   Section 16: Requirements
+   ================================ */
+
+.requirements-section {
+  width: 100%;
+}
+
+.requirements-section h2 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+}
+
+.requirements-card {
+  overflow: hidden;
+  border-radius: 1.25rem;
+  background: var(--white-color);
+  box-shadow: var(--box-shadow);
+}
+
+.requirements-card-header {
+  padding: 1.5rem;
+  background: var(--dark-color);
+}
+
+.requirements-card-header h3 {
+  margin: 0;
+  color: var(--white-color);
+  font-size: clamp(1.3rem, 2.5vw, 1.7rem);
+  font-weight: 900;
+}
+
+.requirement-list {
+  padding: 0.75rem 1.5rem;
+}
+
+.requirement-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.requirement-item:last-child {
+  border-bottom: 0;
+}
+
+.requirement-item p {
+  margin: 0;
+  font-size: var(--fs-base);
+  line-height: 1.65;
+  color: #333;
+}
+
+.requirement-icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 9999px;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.requirement-icon-no {
+  background: #000;
+  color: var(--white-color);
+}
+
+.requirement-icon-yes {
+  background: var(--primary-color);
+  color: var(--white-color);
+}
+
+.requirements-needed {
+  align-self: start;
+}
+
+.requirements-needed .requirements-card-header {
+  background: var(--primary-color);
+}
+
+.requirements-needed .requirement-list {
+  background: var(--white-color);
+}
+
+/* ================================
+   Section 17: FAQ
+   ================================ */
+
+.faq-section {
+  width: 100%;
+}
+
+.faq-section h2 {
+  font-size: clamp(2.2rem, 5vw, 4rem);
+}
+
+.faq-item {
+  overflow: hidden;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  background: var(--white-color);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.faq-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  cursor: pointer;
+  list-style: none;
+  font-size: var(--fs-base);
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::marker {
+  display: none;
+}
+
+.faq-icon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 9999px;
+  background: var(--primary-color);
+  color: var(--white-color);
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.faq-item[open] .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-answer {
+  padding: 0 1.5rem 1.5rem;
+}
+
+.faq-answer p {
+  margin: 0;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: #333;
+  font-size: var(--fs-base);
+  line-height: 1.8;
+}
+
+/* ================================
+   Section 18: Final CTA
+   ================================ */
+
+.final-cta-section {
+  width: 100%;
+}
+
+.final-cta-section h2 {
+  color: var(--dark-color);
+  font-size: clamp(2.2rem, 5vw, 4rem);
+}
+
+.final-option {
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.final-option-number {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  color: var(--primary-color);
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.final-option p {
+  margin: 0;
+  color: var(--dark-color);
+  font-size: var(--fs-base);
+  line-height: 1.75;
+}
+
+.final-option-featured {
+  border: 2px solid var(--primary-color);
+  background: var(--primary-color);
+}
+
+.final-option-featured .final-option-number {
+  color: var(--dark-color);
+}
+
+.final-option-featured p {
+  color: var(--dark-color);
+}
+
+.final-option-featured strong {
+  font-weight: 900;
+}
+
+.final-offer-card {
+  padding: 2.5rem 1.5rem;
+  border-radius: 1.5rem;
+  background: var(--white-color);
+  text-align: center;
+  box-shadow: 0 0 30px rgba(255, 113, 0, 0.2);
+}
+
+.final-offer-card h3 {
+  margin-top: 0.75rem;
+  color: var(--dark-color);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+.final-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.final-price span {
+  color: #777;
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-decoration: line-through;
+}
+
+.final-price strong {
+  display: block;
+  margin-top: 0.25rem;
+  color: var(--primary-color);
+  font-size: clamp(4rem, 10vw, 6rem);
+  font-weight: 900;
+  line-height: 1;
+}
+
+.final-price-subtext {
+  margin-top: 0.75rem;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.final-cta-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: 0.75rem;
+  background: var(--primary-color);
+  color: var(--white-color);
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 1.4;
+  text-decoration: none;
+  box-shadow: var(--box-shadow);
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.final-cta-button:hover {
+  transform: translateY(-2px);
+  background: var(--dark-color);
+  color: var(--white-color);
+}
+
+.final-access-note {
+  max-width: 32rem;
+  margin: 1.25rem auto 0;
+  color: #555;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.final-trust {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem 1.5rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.final-trust span {
+  color: #555;
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+}
+
+/* ================================
+   Section 19: Footer / Disclaimer
+   ================================ */
+
+.site-footer {
+  width: 100%;
+  background-color: var(--dark-color);
+}
+
+.footer-disclaimer {
+  max-width: 900px;
+  margin: 0 auto 0.75rem;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
+.footer-disclaimer-last {
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 700;
+}

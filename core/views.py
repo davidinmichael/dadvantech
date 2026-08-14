@@ -134,3 +134,8 @@ def summer_code(request):
     """View to see the summer"""
 
     return render(request, "core/summer_code.html")
+
+def weekend_cheque(request):
+    """View to see the weekend cheque"""
+
+    return render(request, "core/weekend_cheque.html")
